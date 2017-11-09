@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="AhorcadoGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-9f-5cK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpN-Jf-ar3">
+                                <rect key="frame" x="70" y="575" width="234" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.48679292433342464" blue="0.2537585533993385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Comenzar">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="v2Q-5g-xFS" kind="show" id="ZO2-wN-cJO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r0s-9f-5cK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="29i-ff-qG2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r0s-9f-5cK" secondAttribute="trailing" id="I6y-dd-Esm"/>
+                            <constraint firstItem="r0s-9f-5cK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nyo-i7-ulq"/>
+                            <constraint firstItem="r0s-9f-5cK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Uu5-Qv-fRp"/>
+                            <constraint firstAttribute="bottom" secondItem="r0s-9f-5cK" secondAttribute="bottom" id="lTB-we-oDx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ghk-LP-sya"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Materias-->
+        <scene sceneID="NmI-yC-ndc">
+            <objects>
+                <viewController id="v2Q-5g-xFS" customClass="MateriasVC" customModule="AhorcadoGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bmU-H0-fUH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EUW-mq-VAJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t02-zW-6zn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2g-Rw-zaY">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="222.5"/>
+                                                <color key="backgroundColor" red="0.60784313725490191" green="0.34901960784313724" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="Historia">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="v2Q-5g-xFS" eventType="touchUpInside" id="Fct-gx-fmb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfl-GU-lPy">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="222.5"/>
+                                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="Geografía">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="v2Q-5g-xFS" eventType="touchUpInside" id="IBW-ui-4Jn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tdf-iT-ClP">
+                                        <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60D-ce-1nv">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="222"/>
+                                                <color key="backgroundColor" red="0.94509803921568625" green="0.76862745098039209" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="Español">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="v2Q-5g-xFS" eventType="touchUpInside" id="5Y8-KO-EXD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bx1-Q2-fen">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="222"/>
+                                                <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <state key="normal" title="Ciencias Naturales">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="v2Q-5g-xFS" eventType="touchUpInside" id="j5Z-lg-IWE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gIE-z3-SRd">
+                                        <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emz-vH-5uR">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="222.5"/>
+                                                <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="Ingles">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="v2Q-5g-xFS" eventType="touchUpInside" id="gij-xx-gHk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TB-QQ-dxm">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="222.5"/>
+                                                <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="Civismo">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="v2Q-5g-xFS" eventType="touchUpInside" id="H3w-HD-OE9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EUW-mq-VAJ" firstAttribute="bottom" secondItem="prD-ce-Khb" secondAttribute="bottom" id="3pL-vL-wO7"/>
+                            <constraint firstItem="EUW-mq-VAJ" firstAttribute="leading" secondItem="prD-ce-Khb" secondAttribute="leading" id="Eh0-Ul-vAo"/>
+                            <constraint firstItem="prD-ce-Khb" firstAttribute="bottom" secondItem="EUW-mq-VAJ" secondAttribute="bottom" id="FZN-ng-zNv"/>
+                            <constraint firstItem="prD-ce-Khb" firstAttribute="trailing" secondItem="EUW-mq-VAJ" secondAttribute="trailing" id="lQd-ew-6Vi"/>
+                            <constraint firstItem="EUW-mq-VAJ" firstAttribute="top" secondItem="bmU-H0-fUH" secondAttribute="top" id="tXO-Cu-lBJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="prD-ce-Khb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Materias" id="3zF-yW-PXR"/>
+                    <connections>
+                        <segue destination="fnR-Qk-DoP" kind="show" identifier="setGame" id="pxf-4R-cX3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CdF-Ye-0qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256.8" y="133.5832083958021"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="0WL-Z3-GZO">
+            <objects>
+                <viewController id="fnR-Qk-DoP" customClass="GameVC" customModule="AhorcadoGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xvu-lS-azS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeN-Tu-kpB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgrounBoard" translatesAutoresizingMaskIntoConstraints="NO" id="n90-Ud-8nV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="dSH-g7-rrA">
+                                <rect key="frame" x="5" y="20" width="365" height="637"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="43u-6k-7jY">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmM-w8-HIk">
+                                                <rect key="frame" x="0.0" y="0.0" width="108.5" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="hmG-oF-Jdm"/>
+                                                </constraints>
+                                                <state key="normal" image="backButton"/>
+                                                <connections>
+                                                    <action selector="dissmissGame:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="Trl-FF-DRV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xg1-u8-lPv">
+                                                <rect key="frame" x="128.5" y="0.0" width="108" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="8Y4-hW-B81"/>
+                                                </constraints>
+                                                <state key="normal" image="questionButton"/>
+                                                <connections>
+                                                    <action selector="verPregunta:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="6vG-gN-nAK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGC-97-x9W">
+                                                <rect key="frame" x="256.5" y="0.0" width="108.5" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="Ixs-dg-cRD"/>
+                                                </constraints>
+                                                <state key="normal" image="learnButton"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hasta" translatesAutoresizingMaskIntoConstraints="NO" id="pp2-HP-egt">
+                                        <rect key="frame" x="0.0" y="48" width="365" height="377"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAJA CALIFORNIA NORTE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiQ-Q0-Rla">
+                                        <rect key="frame" x="0.0" y="428" width="365" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Tzb-v0-TeP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Rkg-8t-ka9">
+                                        <rect key="frame" x="0.0" y="481" width="365" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGz-Sz-qCY" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="A">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="jnp-hJ-4Cg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8g-GH-JNT" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="41" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="B">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="R6q-Lx-wNy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPn-sf-b0E" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="82" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="VKN-UA-QWW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHT-ey-PhX" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="123" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="D">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="K7k-tU-ujJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlU-g6-naT" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="164" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="E">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="wHt-QU-zo6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxV-BX-hQc" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="205" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="F">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="Arb-aj-U75"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYj-pk-glX" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="246" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="G">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="rlC-Gr-3Dg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5d3-QU-VZC" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="287" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="H">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="MdA-QS-gO4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz0-T4-QDp" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="328" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="I">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="PYG-Hn-YID"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="J9g-J9-lXx"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-2R-6Px">
+                                        <rect key="frame" x="0.0" y="534" width="365" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPD-hs-Jub" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="J">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="SaL-7c-rmf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acf-E2-nnU" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="41" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="K">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="Dtf-Ll-xCC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhr-eg-bm7" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="82" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="L">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="oBW-6r-EvC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GS-pC-XZg" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="123" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="M">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="RsK-r2-LUc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAS-re-rb8" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="164" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="N">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="EDb-m2-dLa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M9-ZU-fKB" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="205" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="Ñ">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="WrP-4Z-JES"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpd-Qb-Rl2" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="246" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="O">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="TIv-CS-JGp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6U8-PF-LDz" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="287" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="P">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="xGp-mI-bVn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ga5-xY-5OJ" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="328" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="Q">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="VVW-oy-Ofh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2ud-YM-NfV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0xK-It-hgr">
+                                        <rect key="frame" x="0.0" y="587" width="365" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Es7-rk-h2j" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="R">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="zDk-Gf-42O"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgd-ms-CBo" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="41" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="S">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="Ii3-jc-LS0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kl0-62-a6d" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="82" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="T">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="GVZ-bE-TOB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKy-2c-C0i" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="123" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="U">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="Z1B-dI-PqJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkr-6r-mpN" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="164" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="V">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="tuZ-kq-mpz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwZ-cV-vyZ" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="205" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="W">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="rFv-8G-yrX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKt-s1-s02" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="246" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="X">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="HdX-1w-oyx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WY-VY-5ZW" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="287" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="vpV-FN-CKY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="Y">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="V0x-Cf-Z0o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E48-wP-D0z" customClass="roundedButton" customModule="AhorcadoGame" customModuleProvider="target">
+                                                <rect key="frame" x="328" y="0.0" width="37" height="50"/>
+                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="OeS-Bt-maf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <state key="normal" title="Z">
+                                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="Oky-AC-f61"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dSH-g7-rrA" secondAttribute="trailing" constant="5" id="3YJ-mh-uxl"/>
+                            <constraint firstItem="EeN-Tu-kpB" firstAttribute="top" secondItem="xvu-lS-azS" secondAttribute="top" id="I87-Qp-PBk"/>
+                            <constraint firstItem="hwI-I9-03R" firstAttribute="bottom" secondItem="EeN-Tu-kpB" secondAttribute="bottom" id="IT0-tf-ziq"/>
+                            <constraint firstItem="dSH-g7-rrA" firstAttribute="top" secondItem="hwI-I9-03R" secondAttribute="top" id="Opz-WJ-2ar"/>
+                            <constraint firstItem="n90-Ud-8nV" firstAttribute="leading" secondItem="xvu-lS-azS" secondAttribute="leading" id="Ptt-Il-fEh"/>
+                            <constraint firstItem="dSH-g7-rrA" firstAttribute="leading" secondItem="hwI-I9-03R" secondAttribute="leading" constant="5" id="ZnR-2a-lLy"/>
+                            <constraint firstAttribute="bottom" secondItem="dSH-g7-rrA" secondAttribute="bottom" constant="10" id="Zx7-VC-CIm"/>
+                            <constraint firstItem="hwI-I9-03R" firstAttribute="trailing" secondItem="EeN-Tu-kpB" secondAttribute="trailing" id="aT7-up-SNh"/>
+                            <constraint firstItem="n90-Ud-8nV" firstAttribute="top" secondItem="xvu-lS-azS" secondAttribute="top" id="dJe-Tg-qf6"/>
+                            <constraint firstItem="hwI-I9-03R" firstAttribute="bottom" secondItem="n90-Ud-8nV" secondAttribute="bottom" id="h5J-9j-8yb"/>
+                            <constraint firstItem="EeN-Tu-kpB" firstAttribute="leading" secondItem="hwI-I9-03R" secondAttribute="leading" id="hgW-4f-GOc"/>
+                            <constraint firstItem="hwI-I9-03R" firstAttribute="trailing" secondItem="n90-Ud-8nV" secondAttribute="trailing" id="l0J-Ym-385"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hwI-I9-03R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ef1-zJ-S7k">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="hFh-Z4-Vc2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="coverBlock" destination="EeN-Tu-kpB" id="bQo-xY-qks"/>
+                        <outlet property="gamLife" destination="pp2-HP-egt" id="ZMf-md-Qi8"/>
+                        <outlet property="lblMateria" destination="ZiQ-Q0-Rla" id="OCj-Iw-dNS"/>
+                        <outlet property="loseView" destination="8zH-JG-9u1" id="iIJ-Ys-oVV"/>
+                        <outlet property="winView" destination="6rS-JJ-94Y" id="nDo-NM-DQL"/>
+                        <segue destination="YES-UQ-0pN" kind="presentation" identifier="popUp" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="PoY-nu-5ae"/>
+                        <segue destination="Ilq-L1-nX3" kind="show" identifier="webSegue" id="vzP-xq-79L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlT-et-CJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="6rS-JJ-94Y">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="Mar-by-pW2"/>
+                </view>
+                <view contentMode="scaleToFill" id="8zH-JG-9u1">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnZ-3l-hoB">
+                            <rect key="frame" x="0.0" y="170" width="135" height="30"/>
+                            <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="135" id="nZ4-MJ-Rzj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <state key="normal" title="Leer">
+                                <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openWebContent:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="cbv-MF-7mo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVc-4p-R6L">
+                            <rect key="frame" x="135" y="170" width="135" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.2411693139429899" blue="0.33660145912390538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="135" id="d12-7w-fM1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <state key="normal" title="Continuar">
+                                <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dissmisLose:" destination="fnR-Qk-DoP" eventType="touchUpInside" id="61b-qj-FUF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WVc-4p-R6L" firstAttribute="trailing" secondItem="FMH-uN-fgm" secondAttribute="trailing" id="2KX-wT-LyB"/>
+                        <constraint firstItem="JnZ-3l-hoB" firstAttribute="leading" secondItem="FMH-uN-fgm" secondAttribute="leading" id="8h3-q8-OFg"/>
+                        <constraint firstItem="WVc-4p-R6L" firstAttribute="bottom" secondItem="FMH-uN-fgm" secondAttribute="bottom" id="Ue3-ZW-iF5"/>
+                        <constraint firstItem="FMH-uN-fgm" firstAttribute="bottom" secondItem="JnZ-3l-hoB" secondAttribute="bottom" id="sHb-ib-dzY"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="FMH-uN-fgm"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="2103" y="152"/>
+        </scene>
+        <!--Pop Up Vc View Controller-->
+        <scene sceneID="RSC-m7-bkm">
+            <objects>
+                <viewController id="YES-UQ-0pN" customClass="popUpVcViewController" customModule="AhorcadoGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cgL-jd-G2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4Y-aP-Bpc">
+                                <rect key="frame" x="16" y="241" width="343" height="188"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifz-WJ-Jd2">
+                                        <rect key="frame" x="0.0" y="152" width="343" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <state key="normal" title="Continuar">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dissmissPopUp:" destination="YES-UQ-0pN" eventType="touchUpInside" id="6kG-I3-w4W"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RH4-Li-bes">
+                                        <rect key="frame" x="8" y="8" width="327" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.3220515839041096" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w4Y-aP-Bpc" firstAttribute="leading" secondItem="H30-RF-LH7" secondAttribute="leading" constant="16" id="42U-Xn-oof"/>
+                            <constraint firstItem="w4Y-aP-Bpc" firstAttribute="centerX" secondItem="cgL-jd-G2Q" secondAttribute="centerX" id="AQ6-3e-i71"/>
+                            <constraint firstItem="w4Y-aP-Bpc" firstAttribute="top" secondItem="H30-RF-LH7" secondAttribute="top" constant="221" id="W4D-zB-Gt2"/>
+                            <constraint firstItem="w4Y-aP-Bpc" firstAttribute="centerY" secondItem="cgL-jd-G2Q" secondAttribute="centerY" constant="1.5" id="l7b-dg-DGk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H30-RF-LH7"/>
+                    </view>
+                    <connections>
+                        <outlet property="popUp" destination="w4Y-aP-Bpc" id="jL7-f6-aAk"/>
+                        <outlet property="txtViewQuestio" destination="RH4-Li-bes" id="oks-YN-ZxG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAi-bD-uss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3110" y="-170"/>
+        </scene>
+        <!--Web Controller-->
+        <scene sceneID="oh1-VL-aad">
+            <objects>
+                <viewController id="Ilq-L1-nX3" customClass="webController" customModule="AhorcadoGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="emR-Md-mbp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOb-Dx-cvA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LL-46-916">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.42098448599999999" blue="0.3964748441" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Continuar">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dissmisWeb:" destination="Ilq-L1-nX3" eventType="touchUpInside" id="DA1-qv-UNo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fOb-Dx-cvA" firstAttribute="bottom" secondItem="cCT-oN-4FN" secondAttribute="bottom" id="0nJ-38-BIj"/>
+                            <constraint firstItem="fOb-Dx-cvA" firstAttribute="trailing" secondItem="cCT-oN-4FN" secondAttribute="trailing" id="V3s-tD-cWs"/>
+                            <constraint firstItem="fOb-Dx-cvA" firstAttribute="top" secondItem="emR-Md-mbp" secondAttribute="top" id="gyL-Sm-xQr"/>
+                            <constraint firstItem="fOb-Dx-cvA" firstAttribute="leading" secondItem="cCT-oN-4FN" secondAttribute="leading" id="qsL-lw-P3k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cCT-oN-4FN"/>
+                    </view>
+                    <connections>
+                        <outlet property="webContent" destination="fOb-Dx-cvA" id="pu9-MN-FaM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r0j-Eq-nBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128.8000000000002" y="529.38530734632684"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Artboard 1" width="750" height="1334"/>
+        <image name="backButton" width="50" height="50"/>
+        <image name="backgrounBoard" width="5472" height="3648"/>
+        <image name="hasta" width="750" height="1334"/>
+        <image name="learnButton" width="50" height="50"/>
+        <image name="questionButton" width="50" height="50"/>
+    </resources>
+</document>
