@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0D5F4D551FA6B45D0040B783 /* popUpVcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F4D541FA6B45D0040B783 /* popUpVcViewController.swift */; };
 		0D7C628B1FA5840500D675D1 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C628A1FA5840500D675D1 /* roundedButton.swift */; };
+		0D8403091FE08DDD00B59EEB /* Bloques.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8403081FE08DDD00B59EEB /* Bloques.swift */; };
+		0D84030D1FE0940300B59EEB /* BlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D84030C1FE0940300B59EEB /* BlockCell.swift */; };
+		0D8403101FE0AE3400B59EEB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D84030F1FE0AE3400B59EEB /* DataService.swift */; };
 		0D8BAB031FA2447100CA21BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8BAB021FA2447100CA21BF /* AppDelegate.swift */; };
 		0D8BAB051FA2447100CA21BF /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8BAB041FA2447100CA21BF /* WelcomeVC.swift */; };
 		0D8BAB081FA2447100CA21BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8BAB061FA2447100CA21BF /* Main.storyboard */; };
@@ -19,6 +22,8 @@
 		0D8BAB1D1FA29D3C00CA21BF /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8BAB1C1FA29D3C00CA21BF /* Materia.swift */; };
 		0D8BAB1F1FA2B26800CA21BF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8BAB1E1FA2B26800CA21BF /* Question.swift */; };
 		0D8BAB211FA2BD7100CA21BF /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8BAB201FA2BD7100CA21BF /* QuestionBank.swift */; };
+		0DA172AC1FE18AE2007729D6 /* InformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA172AB1FE18AE2007729D6 /* InformationVC.swift */; };
+		0DA172AE1FE191DD007729D6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA172AD1FE191DD007729D6 /* Information.swift */; };
 		0DE23E251FB3E6F800486239 /* historia.html in Resources */ = {isa = PBXBuildFile; fileRef = 0DE23E241FB3E6F800486239 /* historia.html */; };
 		0DE23E271FB3E89000486239 /* webController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE23E261FB3E89000486239 /* webController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +31,9 @@
 /* Begin PBXFileReference section */
 		0D5F4D541FA6B45D0040B783 /* popUpVcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpVcViewController.swift; sourceTree = "<group>"; };
 		0D7C628A1FA5840500D675D1 /* roundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
+		0D8403081FE08DDD00B59EEB /* Bloques.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bloques.swift; sourceTree = "<group>"; };
+		0D84030C1FE0940300B59EEB /* BlockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockCell.swift; sourceTree = "<group>"; };
+		0D84030F1FE0AE3400B59EEB /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0D8BAAFF1FA2447100CA21BF /* AhorcadoGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AhorcadoGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8BAB021FA2447100CA21BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D8BAB041FA2447100CA21BF /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -38,6 +46,8 @@
 		0D8BAB1C1FA29D3C00CA21BF /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
 		0D8BAB1E1FA2B26800CA21BF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		0D8BAB201FA2BD7100CA21BF /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		0DA172AB1FE18AE2007729D6 /* InformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationVC.swift; sourceTree = "<group>"; };
+		0DA172AD1FE191DD007729D6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		0DE23E241FB3E6F800486239 /* historia.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = historia.html; sourceTree = "<group>"; };
 		0DE23E261FB3E89000486239 /* webController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D84030E1FE0AE2000B59EEB /* Sevices */ = {
+			isa = PBXGroup;
+			children = (
+				0D84030F1FE0AE3400B59EEB /* DataService.swift */,
+			);
+			path = Sevices;
+			sourceTree = "<group>";
+		};
 		0D8BAAF61FA2447000CA21BF = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +90,7 @@
 		0D8BAB011FA2447100CA21BF /* AhorcadoGame */ = {
 			isa = PBXGroup;
 			children = (
+				0D84030E1FE0AE2000B59EEB /* Sevices */,
 				0D8BAB171FA2664600CA21BF /* Controller */,
 				0D8BAB161FA2663C00CA21BF /* Model */,
 				0D8BAB141FA2662E00CA21BF /* View */,
@@ -89,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				0D7C628A1FA5840500D675D1 /* roundedButton.swift */,
+				0D84030C1FE0940300B59EEB /* BlockCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +119,8 @@
 				0D8BAB1C1FA29D3C00CA21BF /* Materia.swift */,
 				0D8BAB1E1FA2B26800CA21BF /* Question.swift */,
 				0D8BAB201FA2BD7100CA21BF /* QuestionBank.swift */,
+				0D8403081FE08DDD00B59EEB /* Bloques.swift */,
+				0DA172AD1FE191DD007729D6 /* Information.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +133,7 @@
 				0D8BAB1A1FA29C4900CA21BF /* GameVC.swift */,
 				0D5F4D541FA6B45D0040B783 /* popUpVcViewController.swift */,
 				0DE23E261FB3E89000486239 /* webController.swift */,
+				0DA172AB1FE18AE2007729D6 /* InformationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,11 +212,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D8BAB1D1FA29D3C00CA21BF /* Materia.swift in Sources */,
+				0D8403101FE0AE3400B59EEB /* DataService.swift in Sources */,
 				0D8BAB051FA2447100CA21BF /* WelcomeVC.swift in Sources */,
 				0DE23E271FB3E89000486239 /* webController.swift in Sources */,
+				0D8403091FE08DDD00B59EEB /* Bloques.swift in Sources */,
+				0DA172AC1FE18AE2007729D6 /* InformationVC.swift in Sources */,
 				0D8BAB191FA29BDF00CA21BF /* MateriasVC.swift in Sources */,
+				0D84030D1FE0940300B59EEB /* BlockCell.swift in Sources */,
 				0D7C628B1FA5840500D675D1 /* roundedButton.swift in Sources */,
 				0D8BAB1F1FA2B26800CA21BF /* Question.swift in Sources */,
+				0DA172AE1FE191DD007729D6 /* Information.swift in Sources */,
 				0D5F4D551FA6B45D0040B783 /* popUpVcViewController.swift in Sources */,
 				0D8BAB1B1FA29C4900CA21BF /* GameVC.swift in Sources */,
 				0D8BAB031FA2447100CA21BF /* AppDelegate.swift in Sources */,

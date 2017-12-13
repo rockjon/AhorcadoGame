@@ -188,6 +188,8 @@ class GameVC: UIViewController {
         if let popUpVC = segue.destination as? popUpVcViewController{
             popUpVC.allQuestions = allQuestions
             popUpVC.random = random
+        } else  if let webVC = segue.destination as? webController{
+            webVC.materiaSelected = materiaSelected
         }
     }
     
@@ -196,6 +198,7 @@ class GameVC: UIViewController {
     }
     @IBAction func openWebContent(_ sender: Any) {
         self.performSegue(withIdentifier: "webSegue", sender: self)
+       
     }
     
 }
