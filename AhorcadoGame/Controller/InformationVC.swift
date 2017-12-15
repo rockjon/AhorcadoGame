@@ -33,6 +33,14 @@ class InformationVC: UIViewController {
     }
     
 
+    @IBAction func backBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func exitBtn(_ sender: Any) {
+       self.performSegue(withIdentifier: "unwindToGameVC", sender: self)
+
+    }
     /*
     // MARK: - Navigation
 

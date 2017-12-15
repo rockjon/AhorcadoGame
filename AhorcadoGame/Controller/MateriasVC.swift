@@ -40,6 +40,8 @@ class MateriasVC: UIViewController {
             GameVC.materiaSelected = materiaSelected
         }
     }
+    
+    @IBAction func unwindToGameVC(segue:UIStoryboardSegue) { }
     /*
     // MARK: - Navigation
 

@@ -11,6 +11,7 @@ import WebKit
 class webController: UIViewController,UITableViewDataSource, UITableViewDelegate  {
     
 
+    @IBOutlet weak var navBar: UINavigationBar!
     var materiaSelected : Materia!
     @IBOutlet weak var blockTable: UITableView!
     //@IBOutlet weak var webContent: WKWebView!
@@ -18,7 +19,7 @@ class webController: UIViewController,UITableViewDataSource, UITableViewDelegate
         super.viewDidLoad()
         blockTable.dataSource = self
         blockTable.delegate = self
-        navigationItem.title = materiaSelected.nomMateria
+       navBar.topItem?.title = materiaSelected.nomMateria
         /*
         let htmlPath = Bundle.main.path(forResource: "historia", ofType: "html")
         let url = URL(fileURLWithPath: htmlPath!)
